@@ -1,0 +1,50 @@
+.modalLogin{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.modalLogin div{
+    outline: none;
+   
+}
+
+.login-modal{
+
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+.loginform {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.link-contraseña {
+    margin-top: 1em;
+}
+
+.link-registrarse {
+    margin-top: 1em;
+    display: flex;
+}
+
+.link-registrarse .link{
+
+    color: var(--third-color);
+    cursor: pointer;
+}
+
+.logo{
+    border-radius: 0 5px 5px 0;
+}

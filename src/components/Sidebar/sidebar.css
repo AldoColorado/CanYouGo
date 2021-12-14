@@ -1,0 +1,22 @@
+.sidebar{
+    font-size: 16px;
+    min-height: 100vh;
+    width: 15.62em;
+    position: fixed;
+    box-shadow: 0 0 16px #c4c4c4;
+    background: #ffffff;
+}
+
+.sidebar .header{
+    background: var(--main-color);
+    width: 100%;
+    padding:  1em;
+}
+
+
+.sidebar .header .MuiSvgIcon-root{
+    color: #ffffff;
+    cursor: pointer;
+    width: 1.5em;
+    height:1.5em;
+}

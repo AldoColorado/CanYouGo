@@ -1,0 +1,57 @@
+.modalRegisterClient {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modalRegisterClient div{
+    outline: none;
+   
+}
+
+.modalRegisterClient .modal-registerCliente {
+
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 5px;
+
+}
+
+
+
+.form-cliente {
+
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.form-cliente .title-crearcuenta {
+    padding: 1.6em;
+}
+
+.img-clientes {
+
+    display: flex;
+    background-color: var(--third-color);
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+
+}
+
+
+.img-clientes img {
+
+    padding: .25em;
+    width: 400px;
+
+}
+
+
+

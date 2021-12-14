@@ -1,0 +1,14 @@
+.tittle-label {
+
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.tittle-container {
+    
+    display: flex;
+    justify-content: center;
+}

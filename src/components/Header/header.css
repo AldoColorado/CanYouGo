@@ -1,0 +1,26 @@
+.header{
+
+    width: 100%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+
+.name{
+    color: #ffffff;
+}
+
+.header .MuiSvgIcon-root{
+
+    color: #ffffff;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+
+}
+
+.logo{
+    background: var(--main-color);
+}

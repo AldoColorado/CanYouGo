@@ -1,0 +1,22 @@
+.custom-input{
+    display: flex;
+    margin-top: 1em;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    min-width: 20em;
+}
+
+.custom-input input{
+    border: none;
+    outline: none;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.custom-input .MuiSvgIcon-root{
+    color: var(--main-color);
+}
+
+.custom-input .input {
+    width: 100%;
+}

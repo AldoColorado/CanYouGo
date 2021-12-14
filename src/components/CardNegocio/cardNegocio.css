@@ -1,0 +1,42 @@
+.card-negocio {
+
+    border-radius: 5px;
+    box-shadow: 4px 4px 16px #C0C0C0;
+    width: 250px;
+    
+
+    
+    
+}
+
+.card-negocio img {
+
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    width: 250px;
+    height: 200px;
+
+}
+
+.card-negocio h2 {
+
+    color: var(--main-color);
+    width: min-content;
+}
+
+.card-negocio .info-negocio {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.card-negocio .info-negocio .imagen-capacidad img{
+
+    width: 50px;
+    height: 50px;
+    
+
+}
