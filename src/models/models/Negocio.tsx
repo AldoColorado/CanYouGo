@@ -2,7 +2,7 @@ export interface Negocio{
 
     idNegocio: number;
     nombre: string;
-    descripcion: string;
+    descripción: string;
     foto: string;
     fotoPortada: string;
     metodosPago: string;

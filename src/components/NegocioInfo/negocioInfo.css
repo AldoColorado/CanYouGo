@@ -1,0 +1,23 @@
+.contenedor-principal-negocio {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedor-negocio {
+    
+    width: 90%;
+    
+   
+}
+
+.negocio-portada {
+    display: flex;
+    justify-content: center;
+    
+}
+
+

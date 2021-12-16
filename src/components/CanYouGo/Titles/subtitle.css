@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.subtitle-label {
+
+    font-family: 'Cabin', sans-serif;
+    color: #7DA8FF;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+
+.subtitlecontainer {
+    
+   
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1em;
+    max-width: 90%;
+    
+}

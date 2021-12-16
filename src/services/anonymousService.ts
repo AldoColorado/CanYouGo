@@ -30,4 +30,23 @@ export class anonymousService {
       });
   }
 
+
+  
+  public static getSucursal(idSucursal: number, setSucursal: (e: Sucursal) => void) {
+
+    
+
+    anonymousRequest
+      .getSucursal(idSucursal)
+      .then((res) => {
+        console.log(res.data);
+        const data = res.data as Sucursal;
+        setSucursal(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+
 }

@@ -1,0 +1,23 @@
+.search-box-main {
+    margin-top: 1em;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0.3em ;
+    color: #1b1b1b;
+
+}
+
+.search-box-main .search-box {
+    
+}
+
+.search-box  .MuiSvgIcon-root{
+    color: var(--main-color);
+}
+
+
+.search-box input {
+    border: none;
+    outline: none;
+}
+
