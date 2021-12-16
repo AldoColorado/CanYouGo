@@ -14,5 +14,5 @@ export interface Sucursal{
     fotoPortada: string;
     Negocio: Negocio;
     fotoAforo: string;
-    
+    porcentajeAforo: string
 }

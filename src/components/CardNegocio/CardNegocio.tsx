@@ -5,34 +5,36 @@ import aforoEmpty from "../../assets/images/Empty.png";
 import aforoHallFull from "../../assets/images/HallFull.png";
 import aforoFull from "../../assets/images/Full.png";
 import "./cardNegocio.css";
+import { useNavigate } from "react-router-dom";
+import { routes } from "../../enum/routes";
 
 const CardNegocio = ({ sucursal }: { sucursal: Sucursal }) => {
   const [imagenAforoo, setImagenAforoo] = useState<string>("");
-
+  const history = useNavigate();
   const asignarTarjeta = () => {
     const aforoPorcentaje = (sucursal.aforoActual * 100) / sucursal.capacidad;
 
     if (aforoPorcentaje > 80) {
-
       setImagenAforoo(aforoFull);
-
-
     } else if (aforoPorcentaje > 30 && aforoPorcentaje <= 80) {
-
       setImagenAforoo(aforoHallFull);
-
-
     } else setImagenAforoo(aforoEmpty);
 
-    console.log(imagenAforoo);
   };
 
   useEffect(() => {
     asignarTarjeta();
   }, []);
 
+  const handleNewView = (id: number) => {
+    history(routes.INFONEGOCIO + id);
+  };
+
   return (
-    <div className="card-negocio">
+    <div
+      className="card-negocio"
+      onClick={() => handleNewView(sucursal.idSucursal)}
+    >
       <div>
         <img src={sucursal.foto} />
       </div>

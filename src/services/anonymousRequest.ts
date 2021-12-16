@@ -17,6 +17,15 @@ class anonymousRequest {
     return axios.get(`${process.env.REACT_APP_API_ENDPOINT}Sucursal`);
   }
 
+  async getSucursal(idSucursal: number) {
+  
+    return axios.get(
+      `${process.env.REACT_APP_API_ENDPOINT}Sucursal/${idSucursal}`,  {
+        
+      }
+    );
+  }
+
 }
 
 export default new anonymousRequest();

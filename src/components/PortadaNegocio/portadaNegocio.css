@@ -1,0 +1,75 @@
+.portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-containeer {
+    width: 80%;
+}
+
+.card-portadanegocio {
+
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 16px #C0C0C0;
+    
+    
+}
+
+.card-portadanegocio img {
+
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    width: 100%;
+}
+
+
+.card-portadanegocio .info-portadanegocio {
+
+    display: flex;  
+
+}
+
+.info-general {
+    display: flex;
+    padding-left: 2em;
+    width: 100%;
+    align-content: flex-start;
+}  
+
+.datos-negocio {
+    padding-left: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-portadanegocio .info-portadanegocio img{
+    width: 15%;
+    border: 6px solid var(--main-color);
+    border-radius: 50%;
+}
+
+.apartado-aforo {
+    padding: .5em 0 0 0;
+    display: flex;
+    justify-content: left;
+
+}
+
+.porcentaje-frase {
+    display: flex;
+    flex-direction: initial;
+
+}
+
+.card-portadanegocio .info-portadanegocio .imagen-aforo img{
+
+    width: 100px;
+    height: 80px;
+    border: 6px;
+    
+}

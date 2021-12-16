@@ -1,14 +1,25 @@
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container-content{
+    width: 90%;
+    
+}
 .contenedor {
 
     width: 100%;
     display: flex;
     justify-content: center; 
+    align-items: center;
     
 }
 
 .contenedor .conteiner {
 
-    max-width: 90%;
     display: flex;
     flex-direction: column;
 
@@ -20,8 +31,15 @@
     display: flex;
     flex-wrap: wrap;
     grid-gap: 1em;
-    
 
+}
+
+.search-box {
+
+   width: 100%;
+   
+    display: flex;
+    justify-content: end;
 }
 
 

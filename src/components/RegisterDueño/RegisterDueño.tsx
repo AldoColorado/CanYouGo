@@ -2,7 +2,7 @@ import { Button, Modal, Snackbar } from "@material-ui/core";
 import React, { useState } from "react";
 import TitleWelcome from "../Login/TitleWelcome/TitleWelcome";
 import PrimaryButton from "../Miscelaneous/PrimaryButton/PrimaryButton";
-import "./registerCliente.css";
+import "./registerDueño.css";
 import imgDueño from "../../assets/images/Dueño.png";
 import imgCliente from "../../assets/images/Cliente.png";
 import Title from "../Login/Title/Title";
@@ -13,17 +13,18 @@ import { Cuenta } from "../../models/models/Cuenta";
 import { createAcountService } from "../../services/CreateAcount/createAcountService";
 import { Alert } from "@material-ui/lab";
 import { TipeMessage } from "../../enum/TipeMessage";
+import { Dueño } from "../../models/models/Dueño";
 
-const RegisterCliente = ({
-  openRegisterClienteModal,
-  setOpenRegisterClienteModal,
+const RegistrarDueño = ({
+  openRegistrarDueñoModal,
+  setOpenRegistrarDueñoModal,
   setCloseModalRegisterType
 }: {
-  openRegisterClienteModal: boolean;
-  setOpenRegisterClienteModal: (e: boolean) => void;
+  openRegistrarDueñoModal: boolean;
+  setOpenRegistrarDueñoModal: (e: boolean) => void;
   setCloseModalRegisterType: (e: boolean) => void;
 }) => {
-  const [cliente, setCliente] = useState<Cliente>({
+  const [dueño, setDueño] = useState<Dueño>({
     username: "",
     nombre: "",
     apellidos: "",
@@ -31,9 +32,10 @@ const RegisterCliente = ({
     password: "",
     telefono: "",
     tipoUsuario: "",
+    RFC: ""
   });
 
-  const [statusRegisterCliente, setstatusRegisterCliente] = useState<{
+  const [statusRegistrarDueño, setstatusRegistrarDueño] = useState<{
     code: number;
     message: string;
     tipe: TipeMessage;
@@ -46,16 +48,16 @@ const RegisterCliente = ({
   
 
 
-  const CrearCliente = () => {
+  const CrearDueño = () => {
     
     setCloseModalRegisterType(false);
 
-    createAcountService.createCliente(
-        cliente,
+    createAcountService.createDueño(
+        dueño,
         setSnackbarOpen,
-        setstatusRegisterCliente,
-        setOpenRegisterClienteModal,
-        setCliente,
+        setstatusRegistrarDueño,
+        setOpenRegistrarDueñoModal,
+        setDueño,
         
     )
   };
@@ -67,14 +69,14 @@ const RegisterCliente = ({
   return (
     <React.Fragment>
       <Modal
-        open={openRegisterClienteModal}
-        onClose={() => setOpenRegisterClienteModal(false)}
-        className="modalRegisterClient"
+        open={openRegistrarDueñoModal}
+        onClose={() => setOpenRegistrarDueñoModal(false)}
+        className="modalRegisterDueño"
       >
-        <div className="modal-registerCliente" >
-          <div className="form-cliente">
-            <div className="title-crearcuenta">
-              <Title text="Crea cuenta de cliente" />
+        <div className="modal-RegistrarDueño">
+          <div className="form-dueño">
+            <div className="title-crearcuentaDueño">
+              <Title text="Crea cuenta de dueño" />
             </div>
             <CustomInput
               icon
@@ -82,9 +84,9 @@ const RegisterCliente = ({
                 <input
                   placeholder="Username"
                   type="text"
-                  value={cliente.username}
+                  value={dueño.username}
                   onChange={(e) =>
-                    setCliente({ ...cliente, username: e.target.value })
+                    setDueño({ ...dueño, username: e.target.value })
                   }
                 />
               }
@@ -96,9 +98,9 @@ const RegisterCliente = ({
                 <input
                   placeholder="Nombre"
                   type="text"
-                  value={cliente.nombre}
+                  value={dueño.nombre}
                   onChange={(e) =>
-                    setCliente({ ...cliente, nombre: e.target.value })
+                    setDueño({ ...dueño, nombre: e.target.value })
                   }
                 />
               }
@@ -110,9 +112,9 @@ const RegisterCliente = ({
                 <input
                   placeholder="Apellidos"
                   type="text"
-                  value={cliente.apellidos}
+                  value={dueño.apellidos}
                   onChange={(e) =>
-                    setCliente({ ...cliente, apellidos: e.target.value })
+                    setDueño({ ...dueño, apellidos: e.target.value })
                   }
                 />
               }
@@ -124,9 +126,23 @@ const RegisterCliente = ({
                 <input
                   placeholder="Telefono"
                   type="text"
-                  value={cliente.telefono}
+                  value={dueño.telefono}
                   onChange={(e) =>
-                    setCliente({ ...cliente, telefono: e.target.value })
+                    setDueño({ ...dueño, telefono: e.target.value })
+                  }
+                />
+              }
+            />
+
+            <CustomInput
+              icon
+              input={
+                <input
+                  placeholder="RFC"
+                  type="text"
+                  value={dueño.RFC}
+                  onChange={(e) =>
+                    setDueño({ ...dueño, RFC: e.target.value })
                   }
                 />
               }
@@ -138,9 +154,9 @@ const RegisterCliente = ({
                 <input
                   placeholder="Correo"
                   type="text"
-                  value={cliente.correo}
+                  value={dueño.correo}
                   onChange={(e) =>
-                    setCliente({ ...cliente, correo: e.target.value })
+                    setDueño({ ...dueño, correo: e.target.value })
                   }
                 />
               }
@@ -152,21 +168,21 @@ const RegisterCliente = ({
                 <input
                   placeholder="Password"
                   type="Password"
-                  value={cliente.password}
+                  value={dueño.password}
                   onChange={(e) =>
-                    setCliente({ ...cliente, password: e.target.value })
+                    setDueño({ ...dueño, password: e.target.value })
                   }
                 />
               }
             />
 
-            <div onClick={() => CrearCliente()}>
+            <div onClick={() => CrearDueño()}>
               <PrimaryButton name="Registrarse" />
             </div>
           </div>
 
-          <div className="img-clientes">
-            <img src={imgCliente} />
+          <div className="img-dueños">
+            <img src={imgDueño} />
           </div>
         </div>
       </Modal>
@@ -177,10 +193,12 @@ const RegisterCliente = ({
         autoHideDuration={6000}
         onClose={() => setSnackbarOpen(false)}
       >
-        <Alert severity={statusRegisterCliente.tipe}>{statusRegisterCliente.message}</Alert>
+        <Alert severity={statusRegistrarDueño.tipe}>
+          {statusRegistrarDueño.message}
+        </Alert>
       </Snackbar>
     </React.Fragment>
   );
 };
 
-export default RegisterCliente;
+export default RegistrarDueño;
