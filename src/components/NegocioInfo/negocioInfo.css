@@ -4,20 +4,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .contenedor-negocio {
     
     width: 90%;
     
-   
+    
 }
 
 .negocio-portada {
     display: flex;
     justify-content: center;
-    
+}
+
+.info-general-horario {
+
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.info-general-horario .medidas-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
 
 

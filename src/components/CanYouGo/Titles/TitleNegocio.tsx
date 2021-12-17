@@ -6,7 +6,7 @@ const TitleNegocio = ({ text }: {text: string}) => {
 
     return (
         <div className='tnegociocontainer'>
-            <h2 className='tnegocio-label'> {text} </h2>
+            <h1 className='tnegocio-label'> {text} </h1>
         </div>
     )
 };

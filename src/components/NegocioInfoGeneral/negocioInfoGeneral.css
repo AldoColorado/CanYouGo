@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.card-negocio-infogeneral {
+    border-radius: 5px;
+    box-shadow: 4px 4px 16px #C0C0C0;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+.container-info-general {
+
+    width: min-content;
+}
+
+.title-infogeneral {
+    align-items: left;
+}
+
+.container-textInfo {
+
+    width: fit-content;
+    padding-left: 3em;
+    
+    
+}
+
+.container-textInfo .subititleHorario {
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    margin-top: .5em;
+    color: var(--third-color)
+}
+
+.horarios-sucursal {
+
+    font-family: 'Cabin', sans-serif;
+    color: #000000;
+    text-align: left;
+}
+
+.container-textInfo .subtitleCorreo {
+
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    margin-top: .5em;
+    color: var(--third-color);
+}
+
+.container-textInfo .correo {
+
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    color: #000000;
+}

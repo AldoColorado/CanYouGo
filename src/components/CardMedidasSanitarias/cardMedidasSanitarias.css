@@ -1,0 +1,21 @@
+
+
+.card-medidas-sanitarias {
+    border-radius: 5px;
+    box-shadow: 4px 4px 16px #C0C0C0;
+    justify-content: center;
+    width: 400px;
+}
+.card-medidas-sanitarias .info-medidasSanitarias{
+    padding-left: 3em;
+}
+
+
+.medida {
+
+    padding-top: 1em;
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    color: #000000;
+
+}

@@ -1,0 +1,17 @@
+.card-servicios {
+    border-radius: 5px;
+    box-shadow: 4px 4px 16px #C0C0C0;
+    justify-content: center;
+    width: 400px;
+}
+.card-servicios .info-servicios{
+    padding-left: 3em;
+}
+.servicio {
+
+    padding-top: 1em;
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    color: #000000;
+
+}

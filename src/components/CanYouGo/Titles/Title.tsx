@@ -5,7 +5,7 @@ const TitleMenu = ({ text }: {text: string}) => {
 
     return (
         <div className='tittlemenu-container'>
-            <h1 className='tittlemenu-label'> {text} </h1>
+            <h2 className='tittlemenu-label'> {text} </h2>
         </div>
     )
 };

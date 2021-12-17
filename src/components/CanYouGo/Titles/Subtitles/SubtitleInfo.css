@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.subtitleinfo-label {
+
+    font-family: 'Cabin', sans-serif;
+    color: var(--main-color);
+    width: max-content;
+    text-align: left;
+
+}
+
+.subtitleinfocontainer {
+    
+    padding-right: 2em;
+    max-width: max-content;
+    
+}
