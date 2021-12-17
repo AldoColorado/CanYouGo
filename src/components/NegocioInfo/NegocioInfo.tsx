@@ -5,6 +5,10 @@ import {
   } from "react-router-dom";
 import { Sucursal } from "../../models/models/Sucursal";
 import { anonymousService } from "../../services/anonymousService";
+import CardMedidasSanitarias from "../CardMedidasSanitarias/CardMedidasSanitarias";
+import CardServicios from "../CardServicios/CardServicios";
+import Map from "../Map/Map";
+import NegocioInfoGeneral from "../NegocioInfoGeneral/NegocioInfoGeneral";
 import PortadaNegocio from "../PortadaNegocio/PortadaNegocio";
 import "./negocioInfo.css";
 
@@ -32,6 +36,29 @@ const NegocioInfo = () => {
               <PortadaNegocio sucursal={sucursal}></PortadaNegocio>
             )}
           </div>
+        </div>
+        <div className="info-general-horario">
+          <div>
+            {Object.keys(sucursal).length > 0 && (
+              <NegocioInfoGeneral sucursal={sucursal}></NegocioInfoGeneral>
+            )}
+          </div>
+          <div className="medidas-servicios">
+            <div>
+              {Object.keys(sucursal).length > 0 && (
+                <CardMedidasSanitarias
+                  sucursal={sucursal}
+                ></CardMedidasSanitarias>
+              )}
+            </div>
+            <div>
+              {Object.keys(sucursal).length > 0 && (
+                <CardServicios sucursal={sucursal}></CardServicios>
+              )}
+            </div>
+          </div>
+
+          <div>{Object.keys(sucursal).length > 0 && <Map></Map>}</div>
         </div>
       </div>
     </div>

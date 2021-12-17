@@ -1,4 +1,7 @@
+import { Horario } from "./Horario";
+import { MedidasSanitarias } from "./MedidasSanitarias";
 import { Negocio } from "./Negocio";
+import { Servicio } from "./Servicio";
 
 export interface Sucursal{
 
@@ -14,5 +17,9 @@ export interface Sucursal{
     fotoPortada: string;
     Negocio: Negocio;
     fotoAforo: string;
-    porcentajeAforo: string
+    porcentajeAforo: string;
+    Horario: Horario[];
+    MedidasSanitarias: MedidasSanitarias[];
+    Servicio: Servicio[]
+    
 }

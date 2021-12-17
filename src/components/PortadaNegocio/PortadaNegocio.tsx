@@ -33,17 +33,21 @@ const PortadaNegocio = ({ sucursal }: { sucursal: Sucursal }) => {
     asignarTarjeta();
   }, []);
 
+
+
   return (
     <div className="portada">
       <div className="portada-containeer">
         <div className="card-portadanegocio">
           <div>
-            <img src={sucursal.Negocio.fotoPortada} />
+            <img src={sucursal.fotoPortada} />
           </div>
           <div className="info-portadanegocio">
             <div className="info-general">
               <img src={sucursal.foto} />
-
+              <div className="imagen-aforo">
+                <img src={imagenAforoo} />
+              </div>
               <div className="datos-negocio">
                 <div>
                   <TitleNegocio text={sucursal.Negocio.nombre}></TitleNegocio>
@@ -53,9 +57,6 @@ const PortadaNegocio = ({ sucursal }: { sucursal: Sucursal }) => {
                 </div>
 
                 <div className="apartado-aforo">
-                  <div className="imagen-aforo">
-                    <img src={imagenAforoo} />
-                  </div>
                   <div className="porcentaje-frase">
                     <Subtitle text={porcentaAforo}></Subtitle>
                   </div>

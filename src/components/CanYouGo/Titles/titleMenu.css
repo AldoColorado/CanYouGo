@@ -1,9 +1,11 @@
 .tittlemenu-label {
 
+    font-family: 'Cabin', sans-serif;
     color: var(--main-color);
     display: flex;
     justify-content: center;
     text-align: center;
+
 
 }
 
